@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtCompanyName"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:hint="Kode Kupon"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/lv1"
+        android:layout_below="@+id/txtCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/sukses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/sisa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="2"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/gagal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="3"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_below="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:clickable="true"
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:listSelector="#006cd9" />
+
+</RelativeLayout>

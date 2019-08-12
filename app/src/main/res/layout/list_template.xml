@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtListElement"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="#e4e3e3"
+        android:padding="5dp"
+        android:text="Hello World"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtListElement2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="#e4e3e3"
+        android:padding="5dp"
+        android:text="time"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+</LinearLayout>
+
+
